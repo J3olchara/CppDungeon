@@ -11,7 +11,7 @@ void EmptyCell::turn(Player* player, int index) {
     player->getMap()->getCell(player->getPosition())->freeMoves(player, index);
 }
 
-std::vector<std::vector<char>> Event::draw() {
+std::vector<std::vector<char>> EmptyCell::draw() {
     std::vector<std::vector<char>> sprite;
     sprite.push_back(std::vector<char>{'/',  '-', '-', '-', '-', '-', '\\'});
     sprite.push_back(std::vector<char>{'|',  'E', 'M', 'P', 'T', 'Y', '|' });

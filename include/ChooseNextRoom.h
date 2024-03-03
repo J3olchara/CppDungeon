@@ -8,6 +8,6 @@
 #include "PositionChanger.h"
 class ChooseNextRoom:public Action, public PositionChanger{
 public:
-    void act(Player*) override;//Ask arguments from who realizes Map
+    void act(Player*) override; //Ask arguments from who realizes Map
 };
 #endif //CPPDUNGEON_CHOOSENEXTROOM_H

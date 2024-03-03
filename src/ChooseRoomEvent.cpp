@@ -5,21 +5,22 @@
 #include "Map.h"
 #include "Monitor.h"
 #include "Player.h"
+#include "ChooseNextRoom.h"
 
 // todo: Ивент, позволяющий в комнате выбирать следующую комнату.
 //      Дочерний от класса Event. Переопределяет:
 
 
 void ChooseRoomEvent::turn(Player *player, int index) {
-    // todo:
-    //      addActions(Player*, ChooseRoom*) для всех доступных ChooseRoom (См класс Map, ChooseRoom)
-    //      Class ChooseRoom does not exist at 03.03.24 21:21
     player->getMonitor()->draw();
     player->getMap()->getCell(player->getPosition())->freeMoves(player, index);
-//    for (auto event : )
+    for (auto *cell : player->getMap()->getNextRooms()) {
+//        todo: create ChooseNextRoomConstructor and uncomment below with right parameters
+//        this->addAction(player, ChooseNextRoom(cell));
+    }
 }
 
-std::vector<std::vector<char>> Event::draw() {
+std::vector<std::vector<char>> ChooseRoomEvent::draw() {
     std::vector<std::vector<char>> sprite;
     sprite.push_back(std::vector<char>{'/',  '-', '-', '-', '-', '-', '\\'});
     sprite.push_back(std::vector<char>{'|',  'C', 'R', 'O', 'O', 'M', '|' });

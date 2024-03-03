@@ -11,6 +11,7 @@ public:
     Map(int);
     Map();
     Cell* getCell(Position);
+    std::vector<Cell*> getNextRooms();
     Position moveLeft(Position);
     Position moveRight(Position);
     void setRooms(Position&);

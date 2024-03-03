@@ -3,9 +3,7 @@
 //
 #include "Event.h"
 
-void Event::turn(Player* player, int index) {
-    this->addAction(player, this->_actions[index]);
-}
+void Event::turn(Player* player, int index) {}
 
 std::vector<std::vector<char>> Event::draw() {
     std::vector<std::vector<char>> sprite;

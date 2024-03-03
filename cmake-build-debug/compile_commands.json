@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/arseniiborodulin/Desktop/CppDungeon/cmake-build-debug",
+  "command": "/usr/bin/g++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -fcolor-diagnostics -o CMakeFiles/CppDungeon.dir/main.cpp.o -c /Users/arseniiborodulin/Desktop/CppDungeon/main.cpp",
+  "file": "/Users/arseniiborodulin/Desktop/CppDungeon/main.cpp",
+  "output": "CMakeFiles/CppDungeon.dir/main.cpp.o"
+}
+]

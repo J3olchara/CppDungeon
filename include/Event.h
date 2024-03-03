@@ -9,8 +9,6 @@
 class Player;
 class Action;
 class Event:public ActionsChanger{
-private:
-    std::vector<std::unique_ptr<Action>> _actions;
 protected:
 public:
     virtual void turn(Player*, int);
