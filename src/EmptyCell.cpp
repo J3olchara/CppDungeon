@@ -2,9 +2,9 @@
 // Created by Арсений Бородулин on 03.03.2024.
 //
 #include "EmptyCell.h"
-#include "Player.h"
-#include "Monitor.h"
 #include "Map.h"
+#include "Monitor.h"
+#include "Player.h"
 
 void EmptyCell::turn(Player* player, int index) {
     player->getMonitor()->draw();

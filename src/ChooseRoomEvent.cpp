@@ -3,15 +3,17 @@
 //
 #include "ChooseRoomEvent.h"
 #include "Map.h"
+#include "Monitor.h"
 #include "Player.h"
-#include "monitor.h"
 
 // todo: Ивент, позволяющий в комнате выбирать следующую комнату.
 //      Дочерний от класса Event. Переопределяет:
-//      addActions(Player*, ChooseRoom*) для всех доступных ChooseRoom (См класс Map, ChooseRoom)
-//      Class ChooseRoom does not exist
+
 
 void ChooseRoomEvent::turn(Player *player, int index) {
+    // todo:
+    //      addActions(Player*, ChooseRoom*) для всех доступных ChooseRoom (См класс Map, ChooseRoom)
+    //      Class ChooseRoom does not exist at 03.03.24 21:21
     player->getMonitor()->draw();
     player->getMap()->getCell(player->getPosition())->freeMoves(player, index);
 //    for (auto event : )
