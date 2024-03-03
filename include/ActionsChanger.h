@@ -11,7 +11,7 @@ class Player;
 class Action;
 class ActionsChanger{
 protected:
-    void addAction(Player*, std::unique_ptr<Action>&);
+    void addAction(Player*, std::unique_ptr<Action>);
     void removeAction(Player*, std::function<bool (std::set<std::unique_ptr<Action>>::iterator)>);
     void returnToDefault(Player*);
     std::set<std::unique_ptr<Action>>& getActions(Player*);

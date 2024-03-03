@@ -1,0 +1,3 @@
+/Users/arseniiborodulin/Desktop/CppDungeon/cmake-build-debug/CMakeFiles/CppDungeon.dir
+/Users/arseniiborodulin/Desktop/CppDungeon/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/arseniiborodulin/Desktop/CppDungeon/cmake-build-debug/CMakeFiles/rebuild_cache.dir
