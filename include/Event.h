@@ -4,8 +4,8 @@
 
 #ifndef UNTITLED_EVENT_H
 #define UNTITLED_EVENT_H
-#include <vector>
 #include "ActionsChanger.h"
+#include <vector>
 class Player;
 class Action;
 class Event:public ActionsChanger{
