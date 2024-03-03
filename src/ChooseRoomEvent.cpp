@@ -7,9 +7,6 @@
 #include "Player.h"
 #include "ChooseNextRoom.h"
 
-// todo: Ивент, позволяющий в комнате выбирать следующую комнату.
-//      Дочерний от класса Event. Переопределяет:
-
 
 void ChooseRoomEvent::turn(Player *player, int index) {
     player->getMonitor()->draw();
